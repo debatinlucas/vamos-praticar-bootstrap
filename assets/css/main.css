@@ -1,0 +1,125 @@
+p {
+    font-size: 16px;
+}
+
+.bg-light {
+    background-color: #dedede!important;
+}
+
+.no-paddings {
+    padding: 0!important;
+}
+
+/* Button back to top */
+.button--back-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #fff000;
+    border: 2px solid #fff000;
+    color: #000;
+}
+
+.button--back-top:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+}
+
+/* Gerador para o box-shadow: https://www.cssmatic.com/box-shadow */
+.sombra {
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.5); 
+    -moz-box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.5); 
+}
+
+/* Sobre - Section */
+.sobre {
+    padding-top: 100px;
+}
+
+.sobre__imagem {
+    float: right; 
+    height: auto; 
+    width: 200px;
+    border-radius: 50%;
+}
+
+.sobre__texto {
+    width: 80%;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    background: #fff000;
+}
+
+.preloader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+/* Habilidades - Section */
+.habilidades__imagens {
+    padding: 20px; 
+    border-radius: 20px; 
+}
+
+.habilidades__imagens:hover {
+    opacity: 0.5;
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+} 
+
+/* IFrame - Section */
+.youtube {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.maps {
+    border:0;
+    height: 450px;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .sobre {
+        text-align: center;
+    }
+    .sobre__imagem {
+        float: none;
+        height: auto; 
+        width: 200px;
+    }
+    
+    .sobre__texto {
+        margin: 40px 0;
+        width: 100%;
+    }
+}
